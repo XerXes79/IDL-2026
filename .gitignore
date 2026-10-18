@@ -1,2 +1,5 @@
 data/cifar-10-python.tar.gz
 *.pt
+*.csv
+Assignemnt 0/data
+Assignemnt 1/data
