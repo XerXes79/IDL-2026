@@ -1,0 +1,28 @@
+# --------------------------------------------------------------------------
+# PyTorch for AMD GPUs (ROCm) is NOT installed from this file on purpose:
+# from regular PyPI, pip installs the NVIDIA (CUDA) build, which would replace your ROCm build.
+#
+# Install torch + torchvision FIRST from the ROCm index, choosing the ROCm version that
+# matches your system (see https://pytorch.org/get-started/locally/ -> Linux, Pip, ROCm), e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm<version>
+# The notebook uses torch.accelerator, so torch must be 2.6 or newer.
+#
+# Then install the rest:
+#   pip install -r requirements.txt
+# --------------------------------------------------------------------------
+
+torchmetrics>=1.9
+tqdm>=4.70.1
+matplotlib>=3.11.2
+
+# Data analysis / dimensionality reduction
+numpy
+pandas
+scipy
+scikit-learn
+umap-learn
+
+# Jupyter (ipywidgets is needed for the tqdm.auto progress bars in notebooks)
+jupyter
+ipykernel
+ipywidgets>=8.1.9
